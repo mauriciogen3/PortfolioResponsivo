@@ -85,4 +85,10 @@ html, body{
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #149ddd; }
+
+
+  #main{
+    margin-left: 302px;
+  }
+
