@@ -179,3 +179,7 @@ html, body{
   *::-webkit-scrollbar-thumb{
     background-color: #6b6a65;
   }
+
+  .section-bg{
+    background-color: #eff5ff;
+  }
