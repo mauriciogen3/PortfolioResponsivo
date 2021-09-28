@@ -228,3 +228,19 @@ html, body{
     border-radius: 50%;
 
   }
+
+  .carousel-control-prev{
+
+    margin-left: 8rem;
+
+  }
+
+  .carousel-control-next{
+    margin-right: 8rem ;
+  }
+
+  .carousel-indicators{
+
+    margin-bottom: -35px;
+
+  }
