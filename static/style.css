@@ -231,12 +231,12 @@ html, body{
 
   .carousel-control-prev{
 
-    margin-left: 8rem;
+    margin-left: -8rem;
 
   }
 
   .carousel-control-next{
-    margin-right: 8rem ;
+    margin-right: -8rem ;
   }
 
   .carousel-indicators{
