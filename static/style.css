@@ -273,6 +273,13 @@ html, body{
 
   }
 
+  .carousel-inner{
+    justify-content: center ;
+    display: flex;
+
+
+  }
+
   @media (max-width: 1860px){
 
     .carousel-control-prev{
@@ -285,11 +292,9 @@ html, body{
       margin-right: 0;
     }
 
-  }
-
-  .carousel-inner{
-    justify-content: center ;
-    display: flex;
-
+    [data-anime="right"]{
+      transform: translate3d(-100%,0,0)
+    }
 
   }
+
