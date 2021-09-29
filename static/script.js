@@ -42,6 +42,6 @@ const animeScroll = () => {
 
 animeScroll()
 
-window.addEventList ener("scroll", () => {
+window.addEventListener("scroll", () => {
   animeScroll();
 })
