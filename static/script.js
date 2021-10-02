@@ -45,3 +45,8 @@ animeScroll()
 window.addEventListener("scroll", () => {
   animeScroll();
 })
+
+
+//Ativar o carregamento do botao enviar
+
+const btnEnviar = document.querySelector('#btn-enviar')
