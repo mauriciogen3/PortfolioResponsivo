@@ -21,9 +21,9 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-    self.nome = nome,
-    self.email = email,
-    self.mensagem = mensagem
+        self.nome = nome,
+        self.email = email,
+        self.mensagem = mensagem
 
 
 @app.route('/')
@@ -44,13 +44,14 @@ def send():
             subject=f'{formContato.nome} te  enviou uma mensagem no portfólio',
             sender=app.config.ger("MAIL_USERNAME"),
             recipients=['mauriciogen3@hotmail.com',
-                        app.config.ger("MAIL_USERNAME")]
+                        app.config.ger("MAIL_USERNAME")],
             body=f'''
 
-              {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
-              {formContato.mensagem}
+            {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
+            {formContato.mensagem}
 
-                ''')
+            ''')
+
         mail.send(msg)
 
         flash('Mensagem enviada com sucesso!')
