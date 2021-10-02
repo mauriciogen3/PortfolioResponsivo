@@ -642,7 +642,7 @@
 
                                 </div>
 
-                                <divclass="col-12 d-flex justify-content-center mt-4">
+                                <div class="col-12 d-flex justify-content-center mt-4">
                                     <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar
                                         mensagem</button>
 
@@ -652,21 +652,21 @@
                                         Enviando...
                                     </button>
 
+                                </div>
+
+
+
+                            </form>
+
+
                         </div>
 
-
-
-                        </form>
 
 
                     </div>
 
 
-
                 </div>
-
-
-            </div>
 
 
             </div>
@@ -676,8 +676,16 @@
 
         </section>
 
-
-
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> {{message}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
 
     </main>
 
