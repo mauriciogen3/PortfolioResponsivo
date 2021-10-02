@@ -298,3 +298,7 @@ html, body{
 
   }
 
+  #btn-enviar-loader{
+    display: none;
+  }
+
