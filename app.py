@@ -50,8 +50,7 @@ def send():
               {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
               {formContato.mensagem}
 
-                '''
-        )
+                ''')
         mail.send(msg)
 
         flash('Mensagem enviada com sucesso!')
