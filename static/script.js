@@ -58,4 +58,10 @@ btnEnviar.addEventListener("click", () => {
 })
 
 
-//Tirar a mensagem 
+//Tirar a mensagem depois de 5   segundos
+
+setTimeout(() => {
+  document.querySelector('#alerta').style.display = 'none';
+
+
+}, 5000)
